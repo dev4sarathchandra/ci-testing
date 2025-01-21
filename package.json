@@ -1,0 +1,30 @@
+{
+    "name": "ci-demo-project",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "start": "node dist/index.js",
+      "test": "jest",
+      "lint": "eslint \"src/**/*.ts\"",
+      "prepare": "prisma generate",
+      "migrate": "prisma migrate dev",
+      "coverage": "jest --coverage"
+    },
+    "dependencies": {
+      "@prisma/client": "latest",
+      "express": "latest"
+    },
+    "devDependencies": {
+      "@types/express": "latest",
+      "@types/jest": "latest",
+      "@types/node": "latest",
+      "eslint": "latest",
+      "eslint-config-prettier": "latest",
+      "eslint-plugin-prettier": "latest",
+      "jest": "latest",
+      "prisma": "latest",
+      "ts-jest": "latest",
+      "typescript": "latest"
+    }
+  }
