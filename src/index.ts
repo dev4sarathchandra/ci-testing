@@ -19,14 +19,11 @@ app.post("/users", async (req, res) => {
 
 app.delete("/users/:id", async (req, res) => {
   const { id } = req.params;
-  try {
     const user = await prisma.user.delete({
       where: { id: Number(id) },
     });
     res.json(user);
-  } catch (error) {
-    res.status(404).json({ error: "User not found" });
-  }
+ 
 });
 
 const PORT = process.env.PORT || 3000;

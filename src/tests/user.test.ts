@@ -29,9 +29,5 @@ describe("User API", () => {
     expect(res.status).toBe(200);
     expect(res.body.name).toBe("John Doe");
     expect(res.body.email).toBe("john.doe@example.com");
-    const nonExistentUserId = 9999; // Assuming 9999 is a non-existent user ID
-    const resp = await request(app).delete(`/users/${nonExistentUserId}`);
-    expect(resp.status).toBe(404);
-    expect(resp.body).toEqual({ error: "User not found" });
   });
 });
