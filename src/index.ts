@@ -21,7 +21,7 @@ app.delete("/users/:id", async (req, res) => {
   const { id } = req.params;
   try {
     const user = await prisma.user.delete({
-      where: { id: Number(id) }, 
+      where: { id: Number(id) },
     });
     res.json(user);
   } catch (error) {

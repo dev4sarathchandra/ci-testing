@@ -21,7 +21,9 @@ describe("User API", () => {
 
   it("should delete the user", async () => {
     if (!userId) {
-      throw new Error("User ID is undefined. Make sure a user is created first.");
+      throw new Error(
+        "User ID is undefined. Make sure a user is created first.",
+      );
     }
     const res = await request(app).delete(`/users/${userId}`);
     expect(res.status).toBe(200);
@@ -32,5 +34,4 @@ describe("User API", () => {
     expect(resp.status).toBe(404);
     expect(resp.body).toEqual({ error: "User not found" });
   });
-
 });
