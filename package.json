@@ -1,32 +1,34 @@
 {
-    "name": "ci-demo-project",
-    "version": "1.0.0",
-    "main": "dist/index.js",
-    "scripts": {
-        "build": "tsc",
-        "start": "node dist/index.js",
-        "test": "jest",
-        "lint": "eslint \"src/**/*.ts\"",
-        "prepare": "npx prisma generate",
-        "migrate": "npx migrate dev",
-        "coverage": "jest --coverage"
-    },
-    "dependencies": {
-        "@prisma/client": "latest",
-        "express": "latest"
-    },
-    "devDependencies": {
-        "@types/express": "latest",
-        "@types/jest": "latest",
-        "@types/node": "latest",
-        "@types/supertest": "^6.0.2",
-        "eslint": "latest",
-        "eslint-config-prettier": "latest",
-        "eslint-plugin-prettier": "latest",
-        "jest": "latest",
-        "prisma": "latest",
-        "supertest": "^7.0.0",
-        "ts-jest": "latest",
-        "typescript": "latest"
-    }
+  "name": "ci-demo-project",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prepare": "npx prisma generate",
+    "migrate": "npx migrate dev",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@prisma/client": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "latest",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "^5.2.3",
+    "jest": "latest",
+    "prisma": "latest",
+    "supertest": "^7.0.0",
+    "ts-jest": "latest",
+    "typescript": "latest"
+  }
 }

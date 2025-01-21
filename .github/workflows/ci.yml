@@ -37,4 +37,4 @@ jobs:
         run: npm run build
 
       - name: Docker build
-        run: docker build -t ci-demo-project 
+        run: docker build -t ci-demo-project
